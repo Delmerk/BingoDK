@@ -1,0 +1,90 @@
+button.btn {
+	background-color: gray;
+	border: 5px;
+	color: black;
+	padding: 14px 45px;
+	text-align: center;
+	font-size: 23px;
+	margin: 4px 2px;
+	transition: 0.3s;
+}
+
+button#btndraw {
+	position: fixed;
+	top: 8%;
+	left: 7%;
+}
+table {
+	border-collapse: collapse;
+	color: black;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+th {
+	background-color: gray;
+}
+table,
+th,
+td,
+tr {
+	padding: 10px;
+	color: black;
+	border: 3px solid black;
+	text-align: center;
+}
+
+td.datanumber {
+	background-color: White;
+	font-family: fantasy;
+	font-size: 40px;
+	padding: 2px;
+}
+
+td.ball-data {
+	background-color: White;
+	font-family: fantasy;
+	font-size: 40px;
+	padding: 2px;
+}
+
+input {
+	font-size: 16px;
+	border: none;
+	border-radius: 4px;
+	padding: 8px 15px;
+}
+
+body {
+	font-family: manjari;
+	font-size: 20px;
+	background-color: rgb(190, 190, 190);
+}
+
+h1#title {
+	font-size: 100px;
+	text-align: center;
+	height: 15px;
+}
+
+table#table-balls {
+	background-color: white;
+	font-family: fantasy;
+	font-size: 20px;
+	border: 2px solid white;
+	padding: 5px;
+}
+
+button {
+	border: none;
+	border-radius: 4px;
+	width: 10%;
+	padding: 10px 20px;
+}
+
+.pdrwaBall {
+	font-size: 60px;
+}
+
+.free {
+	background-color: red;
+}
