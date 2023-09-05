@@ -10,7 +10,7 @@ let cardMatrixTotal = [];
 let cardMatrix;
 let cardLength;
 let BingoWinner = false;
-import BingoCard from "./BingoCard.js";
+
 
 //The funciton draw() will draw a number of cards depend on the value given by the user.
 //La función draw() extraerá una cantidad de cartas que dependerá del valor dado por el usuario.
@@ -27,6 +27,7 @@ function draw() {
 			alert("Ingrese solo numeros.");
 			txtInput.value = null;
 		} else {
+			//debugger;
 			for (let i = 0; i < txtInput.value; i++) {
 				//create object of BingoCard class
 				card = new BingoCard();
@@ -37,11 +38,13 @@ function draw() {
 				cardMatrixTotal.push(cardMatrix);
 			}
 			//txtInput field set to null
+			//establecer el campo txtInut a null
 			txtInput.value = null;
 		}
 	}
 
-	//display number of cards created
+	//display number of cards created 
+	//mostrar numero de tarejtas creadas.
 	pcardCount.innerHTML = `No. de tarjetas: ${counter}`;
 }
 
@@ -53,8 +56,7 @@ function drawBall() {
 
 	//dislay draw ball
 	//muestra la bola del sorteo
-	pdrawBall.innerHTML =
-		ballDraw.ballDrawnLetter + " - " + ballDraw.ballDrawnNumber;
+	pdrawBall.innerHTML = ballDraw.ballDrawnLetter + " - " + ballDraw.ballDrawnNumber;
 
 	//loopp through the bingo card numbers
 	for (let i = 0; i < cardMatrixTotal.length; i++) {
